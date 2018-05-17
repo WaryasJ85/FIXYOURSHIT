@@ -1,0 +1,2388 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Clix.QA.Selenium</name>
+    </assembly>
+    <members>
+        <member name="T:Clix.QA.Selenium.CheckBoxControl">
+            <summary>
+            The check box control.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.CheckBoxControl.#ctor(OpenQA.Selenium.IWebElement,Clix.QA.Selenium.IControl)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Clix.QA.Selenium.CheckBoxControl"/> class.
+            </summary>
+            <param name="wrappedElement">
+            The wrapped web element.
+            </param>
+            <param name="parent">
+            The parent.
+            </param>
+            <remarks>
+            The wrapped element is the root for the new element control. Any children controls can be directly found/searched
+                from it.
+            </remarks>
+        </member>
+        <member name="P:Clix.QA.Selenium.CheckBoxControl.Checked">
+            <summary>
+            Gets or sets a value indicating whether checked.
+            </summary>
+        </member>
+        <member name="T:Clix.QA.Selenium.CollectionControl">
+            <summary>
+            The collection control.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.CollectionControl.#ctor(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Clix.QA.Selenium.CollectionControl"/> class.
+            </summary>
+            <param name="parentElement">
+            The parent element.
+            </param>
+        </member>
+        <member name="P:Clix.QA.Selenium.CollectionControl.Options">
+            <summary>
+                Gets the options.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.CollectionControl.OptionsContainer">
+            <summary>
+                Gets the options container element.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.CollectionControl.ParentElement">
+            <summary>
+                Gets the container element.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.CollectionControl.SelectByIndex(System.Int32)">
+            <summary>
+            Selects element by its zero-based index.
+            </summary>
+            <param name="index">
+            The element index.
+            </param>
+        </member>
+        <member name="M:Clix.QA.Selenium.CollectionControl.SelectByPosition(System.Int32)">
+            <summary>
+            Selects element by its one-based index.
+            </summary>
+            <param name="position">
+            The element position.
+            </param>
+        </member>
+        <member name="M:Clix.QA.Selenium.CollectionControl.SelectByText(System.String)">
+            <summary>
+            Selects element by its text.
+            </summary>
+            <param name="text">
+            The element text.
+            </param>
+        </member>
+        <member name="M:Clix.QA.Selenium.CollectionControl.GetClickable(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Gets the clickable element from the specified option.
+            </summary>
+            <param name="optionElement">
+            The specified option.
+            </param>
+            <returns>
+            The clickable element which is used to select the specified option.
+            </returns>
+        </member>
+        <member name="T:Clix.QA.Selenium.BrowserTypes">
+            <summary>
+            The browser types constant.
+            </summary>
+        </member>
+        <member name="F:Clix.QA.Selenium.BrowserTypes.Chrome">
+            <summary>
+                The chrome browser type.
+            </summary>
+        </member>
+        <member name="F:Clix.QA.Selenium.BrowserTypes.Firefox">
+            <summary>
+                The firefox browser type.
+            </summary>
+        </member>
+        <member name="F:Clix.QA.Selenium.BrowserTypes.Ie">
+            <summary>
+                The ie browser type.
+            </summary>
+        </member>
+        <member name="F:Clix.QA.Selenium.BrowserTypes.WindowsEdge">
+            <summary>
+                The windows edge browser type.
+            </summary>
+        </member>
+        <member name="F:Clix.QA.Selenium.BrowserTypes.RemoteWebDriver">
+            <summary>
+                The REmoteWebDriver, for grid, name.
+            </summary>
+        </member>
+        <member name="F:Clix.QA.Selenium.BrowserTypes.Phantomjs">
+            <summary>
+            The phantom JS browser type.
+            </summary>
+        </member>
+        <member name="T:Clix.QA.Selenium.DropDownControl">
+            <summary>
+            The drop down control.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.DropDownControl.ListElement">
+            <summary>
+            Gets or sets the list element.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.DropDownControl.ToggleElement">
+            <summary>
+            Gets or sets the toggle element.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.DropDownControl.Expanded">
+            <inheritdoc />
+        </member>
+        <member name="P:Clix.QA.Selenium.DropDownControl.Options">
+            <summary>
+            Gets the options.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.DropDownControl.SelectByIndex(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Clix.QA.Selenium.DropDownControl.SelectByText(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:Clix.QA.Selenium.ElementControl">
+            <summary>
+                The element control.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.ElementControl.#ctor(OpenQA.Selenium.IWebElement,Clix.QA.Selenium.IControl)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Clix.QA.Selenium.ElementControl"/> class.
+            </summary>
+            <param name="wrappedElement">
+            The wrapped web element.
+            </param>
+            <param name="parent">
+            The parent.
+            </param>
+            <remarks>
+            The wrapped element is the root for the new element control. Any children controls can be directly found/searched
+                from it.
+            </remarks>
+        </member>
+        <member name="M:Clix.QA.Selenium.ElementControl.#ctor(Clix.QA.Selenium.IControl)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Clix.QA.Selenium.ElementControl"/> class.
+            </summary>
+            <param name="parent">
+            The parent.
+            </param>
+        </member>
+        <member name="P:Clix.QA.Selenium.ElementControl.Driver">
+            <summary>
+                Gets the driver.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.ElementControl.Parent">
+            <summary>
+                Gets the parent control.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.ElementControl.Wait">
+            <summary>
+                Gets or sets the wait.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.ElementControl.WrappedElement">
+            <summary>
+                Gets the wrapped element.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.ElementControl.FindElement(OpenQA.Selenium.By)">
+            <summary>
+            Finds the first <see cref="T:OpenQA.Selenium.IWebElement"/> using the given method.
+            </summary>
+            <param name="by">
+            The locating mechanism to use.
+            </param>
+            <returns>
+            The first matching <see cref="T:OpenQA.Selenium.IWebElement"/> on the current context.
+            </returns>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">
+            If no element matches the criteria.
+            </exception>
+        </member>
+        <member name="M:Clix.QA.Selenium.ElementControl.FindElements(OpenQA.Selenium.By)">
+            <summary>
+            Finds all <see cref="T:OpenQA.Selenium.IWebElement">IWebElements</see> within the current control using the given
+                mechanism.
+            </summary>
+            <param name="by">
+            The locating mechanism to use.
+            </param>
+            <returns>
+            A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1"/> of all
+                <see cref="T:OpenQA.Selenium.IWebElement">WebElements</see>
+                matching the current criteria, or an empty list if nothing matches.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.ElementControl.WaitLoading">
+            <summary>
+            Wait until the current control completes loading.
+            </summary>
+            <remarks>
+            The web control can be either a page, or an element control.
+            </remarks>
+        </member>
+        <member name="T:Clix.QA.Selenium.ElementExtensions">
+            <summary>
+                Define extension methods for web elements.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.ElementExtensions.SelectByPosition(OpenQA.Selenium.Support.UI.SelectElement,System.Int32)">
+            <summary>
+            Select the option by the position.
+            </summary>
+            <param name="selectElement">
+            The select element.
+            </param>
+            <param name="position">
+            The position.
+            </param>
+        </member>
+        <member name="T:Clix.QA.Selenium.ExpandableSection">
+            <summary>
+            The expandable section.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.ExpandableSection.#ctor(OpenQA.Selenium.IWebElement,Clix.QA.Selenium.IControl)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Clix.QA.Selenium.ExpandableSection"/> class.
+            </summary>
+            <param name="wrappedElement">
+            The wrapped element.
+            </param>
+            <param name="parent">
+            The parent.
+            </param>
+        </member>
+        <member name="P:Clix.QA.Selenium.ExpandableSection.Expanded">
+            <summary>
+            Gets or sets a value indicating whether expanded.
+            </summary>
+        </member>
+        <member name="T:Clix.QA.Selenium.ElementExpectedConditions">
+            <summary>
+            Supplies a set of common conditions that can be waited for using <see cref="T:Clix.QA.Selenium.WebElementWait" />.
+            </summary>
+            <example>
+             <code>
+            		IWait wait = new WebElementWait(searchContext, TimeSpan.FromSeconds(3))
+            		IWebElement element = wait.Until(ElementExpectedConditions.ElementExists(By.Id("foo")));
+             </code>
+            </example>
+        </member>
+        <member name="M:Clix.QA.Selenium.ElementExpectedConditions.ElementExists(OpenQA.Selenium.By)">
+            <summary>
+            An expectation for checking that an element is present on the DOM of a page.
+                This does not necessarily mean that the element is visible.
+            </summary>
+            <param name="locator">
+            The locator used to find the element.
+            </param>
+            <returns>
+            The <see cref="T:OpenQA.Selenium.IWebElement"/> once it is located.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.ElementExpectedConditions.ElementIsVisible(OpenQA.Selenium.By)">
+            <summary>
+            An expectation for checking that an element is present on the DOM of a page and visible.
+                Visibility means that the element is not only displayed but also has a height and width that is greater than 0.
+            </summary>
+            <param name="locator">
+            The locator used to find the element.
+            </param>
+            <returns>
+            The <see cref="T:OpenQA.Selenium.IWebElement"/> once it is located and visible.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.ElementExpectedConditions.ElementSelectionStateToBe(OpenQA.Selenium.IWebElement,System.Boolean)">
+            <summary>
+            An expectation for checking if the given element is in correct state.
+            </summary>
+            <param name="element">
+            The element.
+            </param>
+            <param name="selected">
+            selected or not selected
+            </param>
+            <returns>
+            <see langword="true"/> given element is in correct state.; otherwise, <see langword="false"/>.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.ElementExpectedConditions.ElementSelectionStateToBe(OpenQA.Selenium.By,System.Boolean)">
+            <summary>
+            An expectation for checking if the given element is in correct state.
+            </summary>
+            <param name="locator">
+            The locator used to find the element.
+            </param>
+            <param name="selected">
+            selected or not selected
+            </param>
+            <returns>
+            <see langword="true"/> given element is in correct state.; otherwise, <see langword="false"/>.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.ElementExpectedConditions.ElementToBeClickable(OpenQA.Selenium.By)">
+            <summary>
+            An expectation for checking an element is visible and enabled such that you can click it.
+            </summary>
+            <param name="locator">
+            The locator used to find the element.
+            </param>
+            <returns>
+            The <see cref="T:OpenQA.Selenium.IWebElement"/> once it is located and clickable (visible and enabled).
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.ElementExpectedConditions.ElementToBeClickable(OpenQA.Selenium.IWebElement)">
+            <summary>
+            An expectation for checking an element is visible and enabled such that you can click it.
+            </summary>
+            <param name="element">
+            The element.
+            </param>
+            <returns>
+            The <see cref="T:OpenQA.Selenium.IWebElement"/> once it is clickable (visible and enabled).
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.ElementExpectedConditions.ElementToBeSelected(OpenQA.Selenium.IWebElement)">
+            <summary>
+            An expectation for checking if the given element is selected.
+            </summary>
+            <param name="element">
+            The element.
+            </param>
+            <returns>
+            <see langword="true"/> given element is selected.; otherwise, <see langword="false"/>.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.ElementExpectedConditions.ElementToBeSelected(OpenQA.Selenium.IWebElement,System.Boolean)">
+            <summary>
+            An expectation for checking if the given element is selected.
+            </summary>
+            <param name="element">
+            The element.
+            </param>
+            <param name="selected">
+            selected or not selected
+            </param>
+            <returns>
+            <see langword="true"/> given element is selected.; otherwise, <see langword="false"/>.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.ElementExpectedConditions.ElementToBeSelected(OpenQA.Selenium.By)">
+            <summary>
+            An expectation for checking if the given element is selected.
+            </summary>
+            <param name="locator">
+            The locator used to find the element.
+            </param>
+            <returns>
+            <see langword="true"/> given element is selected.; otherwise, <see langword="false"/>.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.ElementExpectedConditions.InvisibilityOfElementLocated(OpenQA.Selenium.By)">
+            <summary>
+            An expectation for checking that an element is either invisible or not present on the DOM.
+            </summary>
+            <param name="locator">
+            The locator used to find the element.
+            </param>
+            <returns>
+            <see langword="true"/> if the element is not displayed; otherwise, <see langword="false"/>.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.ElementExpectedConditions.InvisibilityOfElementWithText(OpenQA.Selenium.By,System.String)">
+            <summary>
+            An expectation for checking that an element with text is either invisible or not present on the DOM.
+            </summary>
+            <param name="locator">
+            The locator used to find the element.
+            </param>
+            <param name="text">
+            Text of the element
+            </param>
+            <returns>
+            <see langword="true"/> if the element is not displayed; otherwise, <see langword="false"/>.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.ElementExpectedConditions.PresenceOfAllElementsLocatedBy(OpenQA.Selenium.By)">
+            <summary>
+            An expectation for checking that all elements present on the web page that match the locator.
+            </summary>
+            <param name="locator">
+            The locator used to find the element.
+            </param>
+            <returns>
+            The list of <see cref="T:OpenQA.Selenium.IWebElement"/> once it is located.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.ElementExpectedConditions.StalenessOf(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Wait until an element is no longer attached to the DOM.
+            </summary>
+            <param name="element">
+            The element.
+            </param>
+            <returns>
+            <see langword="false"/> is the element is still attached to the DOM; otherwise, <see langword="true"/>.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.ElementExpectedConditions.TextToBePresentInElement(OpenQA.Selenium.IWebElement,System.String)">
+            <summary>
+            An expectation for checking if the given text is present in the specified element.
+            </summary>
+            <param name="element">
+            The WebElement
+            </param>
+            <param name="text">
+            Text to be present in the element
+            </param>
+            <returns>
+            <see langword="true"/> once the element contains the given text; otherwise, <see langword="false"/>.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.ElementExpectedConditions.TextToBePresentInElementLocated(OpenQA.Selenium.By,System.String)">
+            <summary>
+            An expectation for checking if the given text is present in the element that matches the given locator.
+            </summary>
+            <param name="locator">
+            The locator used to find the element.
+            </param>
+            <param name="text">
+            Text to be present in the element
+            </param>
+            <returns>
+            <see langword="true"/> once the element contains the given text; otherwise, <see langword="false"/>.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.ElementExpectedConditions.TextToBePresentInElementValue(OpenQA.Selenium.IWebElement,System.String)">
+            <summary>
+            An expectation for checking if the given text is present in the specified elements value attribute.
+            </summary>
+            <param name="element">
+            The WebElement
+            </param>
+            <param name="text">
+            Text to be present in the element
+            </param>
+            <returns>
+            <see langword="true"/> once the element contains the given text; otherwise, <see langword="false"/>.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.ElementExpectedConditions.TextToBePresentInElementValue(OpenQA.Selenium.By,System.String)">
+            <summary>
+            An expectation for checking if the given text is present in the specified elements value attribute.
+            </summary>
+            <param name="locator">
+            The locator used to find the element.
+            </param>
+            <param name="text">
+            Text to be present in the element
+            </param>
+            <returns>
+            <see langword="true"/> once the element contains the given text; otherwise, <see langword="false"/>.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.ElementExpectedConditions.VisibilityOfAllElementsLocatedBy(OpenQA.Selenium.By)">
+            <summary>
+            An expectation for checking that all elements present on the web page that match the locator are visible.
+                Visibility means that the elements are not only displayed but also have a height and width that is greater than 0.
+            </summary>
+            <param name="locator">
+            The locator used to find the element.
+            </param>
+            <returns>
+            The list of <see cref="T:OpenQA.Selenium.IWebElement"/> once it is located and visible.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.ElementExpectedConditions.VisibilityOfAllElementsLocatedBy(System.Collections.ObjectModel.ReadOnlyCollection{OpenQA.Selenium.IWebElement})">
+            <summary>
+            An expectation for checking that all elements present on the web page that match the locator are visible.
+                Visibility means that the elements are not only displayed but also have a height and width that is greater than 0.
+            </summary>
+            <param name="elements">
+            list of WebElements
+            </param>
+            <returns>
+            The list of <see cref="T:OpenQA.Selenium.IWebElement"/> once it is located and visible.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.ElementExpectedConditions.ElementIfVisible(OpenQA.Selenium.IWebElement)">
+            <summary>
+            The element if visible.
+            </summary>
+            <param name="element">
+            The element.
+            </param>
+            <returns>
+            The <see cref="T:OpenQA.Selenium.IWebElement"/>.
+            </returns>
+        </member>
+        <member name="T:Clix.QA.Selenium.FilterControl">
+            <summary>
+                The filter control.
+            </summary>
+        </member>
+        <member name="F:Clix.QA.Selenium.FilterControl.tableHeaderControl">
+            <summary>
+                The table header control.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.FilterControl.#ctor(Clix.QA.Selenium.IControl,Clix.QA.Selenium.TableHeaderControl)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Clix.QA.Selenium.FilterControl"/> class.
+            </summary>
+            <param name="parent">
+            The parent.
+            </param>
+            <param name="tableHeaderControl">
+            The table header control.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when <see cref="T:Clix.QA.Selenium.TableHeaderControl"/> not instantiated.
+            </exception>
+        </member>
+        <member name="P:Clix.QA.Selenium.FilterControl.FilterContainer">
+            <summary>
+                Gets the filter animation container.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.FilterControl.ResetButton">
+            <summary>
+                Gets the cancel button.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.FilterControl.SubmitButton">
+            <summary>
+                Gets the submit button.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.FilterControl.Activate">
+            <summary>
+                Activates the current filter to allow filtering operations.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.FilterControl.Clear">
+            <summary>
+                Clears the current filter.
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean" />, true when successfully clears the filter.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.FilterControl.Clear(System.TimeSpan)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Clix.QA.Selenium.FilterControl.Filter(System.TimeSpan)">
+            <summary>
+            Submit the filtering request, and wait for the timeout.
+            </summary>
+            <param name="timeout">
+            The timeout.
+            </param>
+            <returns>
+            Return true when successfully perform the filtering request.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.FilterControl.Filter(System.Int32)">
+            <summary>
+            Submit the filtering request, and wait for the timeout in milliseconds.
+            </summary>
+            <param name="timeout">
+            Wait for the timeout period to ensure grid reloaded after filtering.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>, true when successfully submits the filtering request.
+            </returns>
+        </member>
+        <member name="T:Clix.QA.Selenium.FilterStatus">
+            <summary>
+            The filter status defined for table headers where Filter control is applicable.
+            </summary>
+        </member>
+        <member name="F:Clix.QA.Selenium.FilterStatus.Unknow">
+            <summary>
+                Transit or unknown filter status.
+            </summary>
+        </member>
+        <member name="F:Clix.QA.Selenium.FilterStatus.None">
+            <summary>
+                When the table column does not have a filter control.
+            </summary>
+        </member>
+        <member name="F:Clix.QA.Selenium.FilterStatus.Off">
+            <summary>
+                When the table column filter is toggled off.
+            </summary>
+        </member>
+        <member name="F:Clix.QA.Selenium.FilterStatus.On">
+            <summary>
+                When the table column filter is toggled on
+            </summary>
+        </member>
+        <member name="T:Clix.QA.Selenium.FreeTextFilter">
+            <summary>
+                The free text filter.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.FreeTextFilter.#ctor(Clix.QA.Selenium.IControl,Clix.QA.Selenium.TableHeaderControl)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Clix.QA.Selenium.FreeTextFilter"/> class.
+            </summary>
+            <param name="parent">
+            The parent.
+            </param>
+            <param name="tableHeaderControl">
+            The table header control.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when <see cref="T:Clix.QA.Selenium.TableHeaderControl"/> not instantiated.
+            </exception>
+        </member>
+        <member name="P:Clix.QA.Selenium.FreeTextFilter.Operator">
+            <summary>
+                Gets or sets the operator.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.FreeTextFilter.Value">
+            <summary>
+                Gets or sets the value.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.FreeTextFilter.InputElement">
+            <summary>
+                Gets the input element.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.FreeTextFilter.OperatorElement">
+            <summary>
+                Gets the operator element.
+            </summary>
+        </member>
+        <member name="T:Clix.QA.Selenium.ICollectionControl">
+            <summary>
+            The CollectionControl interface.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.ICollectionControl.SelectByIndex(System.Int32)">
+            <summary>
+            The select by index.
+            </summary>
+            <param name="index">
+            The index.
+            </param>
+        </member>
+        <member name="M:Clix.QA.Selenium.ICollectionControl.SelectByPosition(System.Int32)">
+            <summary>
+            Selects element by its one-based index.
+            </summary>
+            <param name="position">
+            The element position.
+            </param>
+        </member>
+        <member name="M:Clix.QA.Selenium.ICollectionControl.SelectByText(System.String)">
+            <summary>
+            The select by text.
+            </summary>
+            <param name="text">
+            The text.
+            </param>
+        </member>
+        <member name="T:Clix.QA.Selenium.IControl">
+            <summary>
+            The Control interface.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.IControl.Driver">
+            <summary>
+            Gets the driver.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.IControl.FindElement(OpenQA.Selenium.By)">
+            <summary>
+            Finds the first <see cref="T:OpenQA.Selenium.IWebElement"/> using the given method.
+            </summary>
+            <param name="by">
+            The locating mechanism to use.
+            </param>
+            <returns>
+            The first matching <see cref="T:OpenQA.Selenium.IWebElement"/> on the current context.
+            </returns>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">
+            If no element matches the criteria.
+            </exception>
+        </member>
+        <member name="M:Clix.QA.Selenium.IControl.FindElements(OpenQA.Selenium.By)">
+            <summary>
+            Finds all <see cref="T:OpenQA.Selenium.IWebElement">IWebElements</see> within the current control using the given
+                mechanism.
+            </summary>
+            <param name="by">
+            The locating mechanism to use.
+            </param>
+            <returns>
+            A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1"/> of all
+                <see cref="T:OpenQA.Selenium.IWebElement">WebElements</see>
+                matching the current criteria, or an empty list if nothing matches.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.IControl.WaitLoading">
+            <summary>
+            Wait until the current control completes loading.
+            </summary>
+            <remarks>
+            The web control can be either a page, or an element control.
+            </remarks>
+        </member>
+        <member name="T:Clix.QA.Selenium.IDropDownControl">
+            <summary>
+            The DropDownControl interface.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.IDropDownControl.Expanded">
+            <summary>
+            Gets or sets a value indicating whether expanded.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.IDropDownControl.SelectByIndex(System.Int32)">
+            <summary>
+            Selects element by its index.
+            </summary>
+            <param name="index">
+            The element index.
+            </param>
+        </member>
+        <member name="M:Clix.QA.Selenium.IDropDownControl.SelectByText(System.String)">
+            <summary>
+            Selects element by its text.
+            </summary>
+            <param name="text">
+            The element text.
+            </param>
+        </member>
+        <member name="T:Clix.QA.Selenium.IExpandableSection">
+            <summary>
+            The ExpandableSection interface.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.IExpandableSection.Expanded">
+            <summary>
+            Gets or sets a value indicating whether expanded.
+            </summary>
+        </member>
+        <member name="T:Clix.QA.Selenium.IFilterControl">
+            <summary>
+                The FilterControl interface.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.IFilterControl.Activate">
+            <summary>
+                Activates the current filter to allow filtering operations.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.IFilterControl.Clear">
+            <summary>
+                Clears the current filter.
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean" />, true when successfully clears the filter.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.IFilterControl.Clear(System.TimeSpan)">
+            <summary>
+            Clears the current filter.
+            </summary>
+            <param name="timeout">
+            The timeout.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>, true when successfully clears the filter.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.IFilterControl.Filter(System.TimeSpan)">
+            <summary>
+            Submit the filtering request.
+            </summary>
+            <param name="timeout">
+            The timeout.
+            </param>
+            <returns>
+            Return true when successfully perform the filtering request.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.IFilterControl.Filter(System.Int32)">
+            <summary>
+            Submit the filtering request, and wait for the timeout in milliseconds.
+            </summary>
+            <param name="timeout">
+            The timeout in milliseconds.
+            </param>
+            <returns>
+            Return true when successfully perform the filtering request.
+            </returns>
+        </member>
+        <member name="T:Clix.QA.Selenium.IToggleable">
+            <summary>
+            The Toggle interface.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.IToggleable.Expanded">
+            <summary>
+            Gets or sets a value indicating whether expanded.
+            </summary>
+        </member>
+        <member name="T:Clix.QA.Selenium.IToggleableCollection">
+            <summary>
+            The toggleable collection interface.
+            </summary>
+        </member>
+        <member name="T:Clix.QA.Selenium.PageBase">
+            <summary>
+                The base class for page objects.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.PageBase.#ctor(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Clix.QA.Selenium.PageBase"/> class.
+            </summary>
+            <param name="driver">
+            The driver.
+            </param>
+        </member>
+        <member name="P:Clix.QA.Selenium.PageBase.Driver">
+            <summary>
+                Gets or sets the driver.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.PageBase.Displaying">
+            <summary>
+            Gets a value indicating whether indicating if the current loaded page matches this page object definition.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.PageBase.Title">
+            <summary>
+                Gets the page title.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.PageBase.FindElement(OpenQA.Selenium.By)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Clix.QA.Selenium.PageBase.FindElements(OpenQA.Selenium.By)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Clix.QA.Selenium.PageBase.WaitLoading">
+            <summary>
+            Wait until the current control completes loading.
+            </summary>
+            <remarks>
+            The web control can be either a page, or an element control.
+            </remarks>
+        </member>
+        <member name="M:Clix.QA.Selenium.PageBase.GoToUrl(System.String,System.UriKind)">
+            <summary>
+            Load a new web page in the current browser window.
+            </summary>
+            <param name="url">
+            The URL to load. It is best to use a fully qualified URL.
+            </param>
+            <param name="uriKind">
+            The uri kind.
+            </param>
+        </member>
+        <member name="M:Clix.QA.Selenium.PageBase.GoToUrl(System.Uri)">
+            <summary>
+            Load a new web page in the current browser window.
+            </summary>
+            <param name="uri">
+            The URL to load.
+            </param>
+        </member>
+        <member name="M:Clix.QA.Selenium.PageBase.LaunchPortal">
+            <summary>
+                The launch portal.
+            </summary>
+        </member>
+        <member name="T:Clix.QA.Selenium.PageRegistrationExtensions">
+            <summary>
+            The page registration extensions.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.PageRegistrationExtensions.RegisterPage``1(Autofac.ContainerBuilder)">
+            <summary>
+            To register a page object.
+            </summary>
+            <param name="containerBuilder">
+            The container builder.
+            </param>
+            <typeparam name="TPage">
+            The page type.
+            </typeparam>
+        </member>
+        <member name="T:Clix.QA.Selenium.PageResolveExtensions">
+            <summary>
+            The page object resolving helper.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.PageResolveExtensions.ResolvePage``1(Autofac.IComponentContext,OpenQA.Selenium.IWebDriver)">
+            <summary>
+            Resolve a page map with a specified web driver.
+            </summary>
+            <param name="componentContext">
+                The component context.
+            </param>
+            <param name="driver">
+            The web driver.
+            </param>
+            <typeparam name="TPage">
+            The page type.
+            </typeparam>
+            <returns>
+            The <typeparamref name="TPage"/>.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.PageResolveExtensions.ResolvePage``1(Autofac.IComponentContext,System.Guid)">
+            <summary>
+            Resolve a page map with a specified web driver token.
+            </summary>
+            <param name="componentContext">
+            The component context.
+            </param>
+            <param name="driverToken">
+            The driver token.
+            </param>
+            <typeparam name="TPage">
+            The page type.
+            </typeparam>
+            <returns>
+            The <typeparamref name="TPage"/>.
+            </returns>
+        </member>
+        <member name="T:Clix.QA.Selenium.Playback">
+            <summary>
+                The playback configuration.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.Playback.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:Clix.QA.Selenium.Playback"/> class.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.Playback.PlaybackSettings">
+            <summary>
+                Gets the playback settings.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.Playback.Initialize">
+            <summary>
+                Reset the playback settings per application configurations.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.Playback.Wait">
+            <summary>
+                Wait for default polling interval.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.Playback.Wait(System.Int32)">
+            <summary>
+            Wait until the specified timeout.
+            </summary>
+            <param name="milliseconds">
+            The milliseconds.
+            </param>
+        </member>
+        <member name="M:Clix.QA.Selenium.Playback.Wait(System.TimeSpan)">
+            <summary>
+            Wait until the specified timeout.
+            </summary>
+            <param name="timeout">
+            The timeout.
+            </param>
+        </member>
+        <member name="T:Clix.QA.Selenium.PlaybackModule">
+            <summary>
+            The playback module.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.PlaybackModule.Load(Autofac.ContainerBuilder)">
+            <summary>
+            Register UI tools components.
+            </summary>
+            <param name="builder">
+            The builder.
+            </param>
+        </member>
+        <member name="T:Clix.QA.Selenium.PlaybackSettings">
+            <summary>
+                The playback settings.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.PlaybackSettings.#ctor">
+            <summary>
+                Prevents a default instance of the <see cref="T:Clix.QA.Selenium.PlaybackSettings" /> class from being created.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.PlaybackSettings.Instance">
+            <summary>
+                Gets the instance.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.PlaybackSettings.BaseUrl">
+            <summary>
+            Gets or sets the base url.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.PlaybackSettings.BrowserType">
+            <summary>
+                Gets or sets the browser type.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.PlaybackSettings.ExplicitlyWaitSecond">
+            <summary>
+                Gets or sets the explicitly waiting timeout in second.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.PlaybackSettings.ImplicitlyWaitSecond">
+            <summary>
+                Gets or sets the implicitly wait second.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.PlaybackSettings.PageLoadTimeoutSecond">
+            <summary>
+                Gets or sets the page load timeout second.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.PlaybackSettings.PollingInterval">
+            <summary>
+                Gets or sets the polling interval.
+            </summary>
+            <remarks> Polling interval is in millisecond. </remarks>
+        </member>
+        <member name="P:Clix.QA.Selenium.PlaybackSettings.SeleniumGridUrl">
+            <summary>
+                Gets or sets the Selenium Grid Hub url.
+            </summary>
+            <remarks> Selenium Grid Hub url. </remarks>
+        </member>
+        <member name="P:Clix.QA.Selenium.PlaybackSettings.WebDriverConfigurationFile">
+            <summary>
+            Gets or sets the web driver configuration file name.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.PlaybackSettings.WaitTimeMultiplier">
+            <summary>
+                Gets or sets wait time multiplier.
+            </summary>
+            <remarks>
+                Wait time multiplier default value to 1. During Playback.Wait it will wait for the ThinkTime Interval multiplied by
+                the wait time multiplier.
+            </remarks>
+        </member>
+        <member name="M:Clix.QA.Selenium.PlaybackSettings.Initialize">
+            <summary>
+                The initialize.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.PlaybackSettings.AppSettings(System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Set up application settings.
+            </summary>
+            <param name="appSettings">
+            The app settings.
+            </param>
+        </member>
+        <member name="T:Clix.QA.Selenium.Predicate">
+            <summary>
+            Represents the method that defines a set of criteria and determines whether those criteria are met.
+            </summary>
+            <returns>
+            Return true if all the criteria defined within the method represented by this delegate are met; otherwise, false.
+            </returns>
+        </member>
+        <member name="T:Clix.QA.Selenium.RadioButtonGroupControl">
+            <summary>
+                The radio button group control.
+            </summary>
+        </member>
+        <member name="F:Clix.QA.Selenium.RadioButtonGroupControl.radioButtonElements">
+            <summary>
+            The radio button elements.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.RadioButtonGroupControl.#ctor(System.Collections.ObjectModel.ReadOnlyCollection{OpenQA.Selenium.IWebElement},Clix.QA.Selenium.IControl)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Clix.QA.Selenium.RadioButtonGroupControl"/> class.
+            </summary>
+            <param name="radioButtonElements">
+            The radio Button Elements.
+            </param>
+            <param name="parent">
+            The parent.
+            </param>
+        </member>
+        <member name="M:Clix.QA.Selenium.RadioButtonGroupControl.Select(System.String,System.String)">
+            <summary>
+            Selects radio button by value.
+            </summary>
+            <param name="value">
+            The value to be selected.
+            </param>
+            <param name="valueAttribute">
+            The value attribute.
+            </param>
+        </member>
+        <member name="M:Clix.QA.Selenium.RadioButtonGroupControl.Select(System.Int32)">
+            <summary>
+            Selects radio button by index.
+            </summary>
+            <param name="index">
+            The zero based index.
+            </param>
+        </member>
+        <member name="T:Clix.QA.Selenium.TableControl">
+            <summary>
+                The table control.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.TableControl.#ctor(OpenQA.Selenium.IWebElement,Clix.QA.Selenium.IControl)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Clix.QA.Selenium.TableControl"/> class.
+            </summary>
+            <param name="wrappedElement">
+            The wrapped element.
+            </param>
+            <param name="parent">
+            The parent.
+            </param>
+        </member>
+        <member name="P:Clix.QA.Selenium.TableControl.Rows">
+            <summary>
+                Gets the table rows.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.TableControl.TableContents">
+            <summary>
+                Gets the table contents.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.TableControl.TableHeaderControls">
+            <summary>
+                Gets the table header controls.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.TableControl.HeaderRowLocator">
+            <summary>
+                Gets the header row locator.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.TableControl.HeaderElementLocator">
+            <summary>
+            Gets the header element locator.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.TableControl.TableItem(System.Int32)">
+            <summary>
+            Gets the row <see cref="T:OpenQA.Selenium.IWebElement"/> by its postion.
+            </summary>
+            <param name="rowPosition">
+            The 1-based row position.
+            </param>
+            <returns>
+            The <see cref="T:OpenQA.Selenium.IWebElement"/> at postion specified by the <paramref name="rowPosition"/>.
+            </returns>
+        </member>
+        <member name="P:Clix.QA.Selenium.TableControl.TableItem(System.Int32,System.Int32)">
+            <summary>
+            Gets the data cell <see cref="T:OpenQA.Selenium.IWebElement"/> by its row and cell postion.
+            </summary>
+            <param name="rowPosition">
+            The 1-based row position.
+            </param>
+            <param name="cellPosition">
+            The 1-based cell position.
+            </param>
+            <returns>
+            The <see cref="T:OpenQA.Selenium.IWebElement"/> at postion specified by the <paramref name="rowPosition"/> and <paramref name="cellPosition"/>.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.TableControl.GetDataCellElement(System.String,System.String)">
+            <summary>
+            Gets the data cell element by its table header name and data cell text.
+            </summary>
+            <param name="headerName">
+            The table header name.
+            </param>
+            <param name="cellText">
+            The data cell text.
+            </param>
+            <returns>
+            The <see cref="T:OpenQA.Selenium.IWebElement"/> represents the matched data cell element.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.TableControl.GetDataCellElement(OpenQA.Selenium.IWebElement,System.String)">
+            <summary>
+            Gets the data cell element from the current row by its table header name.
+            </summary>
+            <param name="row">
+            The current data row.
+            </param>
+            <param name="headerName">
+            The table header name.
+            </param>
+            <returns>
+            The <see cref="T:OpenQA.Selenium.IWebElement"/> represents the matched data cell element.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.TableControl.GetDataCellElement(OpenQA.Selenium.IWebElement,System.Int32)">
+            <summary>
+            Gets the data cell element from the current row by its table header position.
+            </summary>
+            <param name="row">
+            The current data row.
+            </param>
+            <param name="position">
+            The 1-based column position.
+            </param>
+            <returns>
+            The <see cref="T:OpenQA.Selenium.IWebElement"/> represents the matched data cell element.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.TableControl.GetDataCellIndex(System.String)">
+            <summary>
+            Gets data cell's index from table header name.
+            </summary>
+            <param name="headerName">
+            The header name.
+            </param>
+            <returns>
+            The 1-based data cell index, return -1 if header name does not exist.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.TableControl.GetRow(System.Int32)">
+            <summary>
+            Gets table row using its position.
+            </summary>
+            <param name="position">
+            The 1-based row position.
+            </param>
+            <returns>
+            The <see cref="T:OpenQA.Selenium.IWebElement"/> represents the row identified by the row position.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.TableControl.GetTableHeaderControl(System.String)">
+            <summary>
+            Get the table header control by header name.
+            </summary>
+            <param name="headerName">
+            The header name.
+            </param>
+            <returns>
+            A <see cref="T:Clix.QA.Selenium.TableHeaderControl"/> that matches the specified <paramref name="headerName"/>.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.TableControl.GetTableHeaderControl(System.Int32)">
+            <summary>
+            Gets the <see cref="T:Clix.QA.Selenium.TableHeaderControl"/> by its position.
+            </summary>
+            <param name="position">
+            The header position.
+            </param>
+            <returns>
+            The <see cref="T:Clix.QA.Selenium.TableHeaderControl"/> at the specified position.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.TableControl.GetHeaderName(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Gets the header name from the header element.
+            </summary>
+            <param name="element">
+            The header element.
+            </param>
+            <returns>
+            The table header name.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.TableControl.GetRow(Clix.QA.Selenium.TableHeaderControl,System.String)">
+            <summary>
+            Get table row by table header and the value for that column identified by the <see cref="T:Clix.QA.Selenium.TableHeaderControl"/>
+            </summary>
+            <param name="header">
+            The <see cref="T:Clix.QA.Selenium.TableHeaderControl"/>
+            </param>
+            <param name="value">
+            The cell value for the specified column.
+            </param>
+            <returns>
+            The row that has the specified cell with the given value.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.TableControl.GetRow(System.String,System.String)">
+            <summary>
+            Get table row by table header and the value for that column identified by the header name.
+            </summary>
+            <param name="headerName">
+            The table header name for the column.
+            </param>
+            <param name="value">
+            The cell value for the specified column.
+            </param>
+            <returns>
+            The row that has the specified cell with the given value.
+            </returns>
+        </member>
+        <member name="T:Clix.QA.Selenium.TableHeaderControl">
+            <summary>
+                The table header control.
+            </summary>
+        </member>
+        <member name="F:Clix.QA.Selenium.TableHeaderControl.filterStatus">
+            <summary>
+                The filter status.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.TableHeaderControl.#ctor(OpenQA.Selenium.IWebElement,Clix.QA.Selenium.ElementControl)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Clix.QA.Selenium.TableHeaderControl"/> class.
+            </summary>
+            <param name="wrappedElement">
+            The web element.
+            </param>
+            <param name="parent">
+            The parent.
+            </param>
+        </member>
+        <member name="P:Clix.QA.Selenium.TableHeaderControl.DisplayName">
+            <summary>
+                Gets or sets the display name.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.TableHeaderControl.FilterStatus">
+            <summary>
+                Gets or sets the filter status.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">
+                Thrown when trying to set <see cref="P:Clix.QA.Selenium.TableHeaderControl.FilterStatus" /> to None or Unknown explicitly.
+            </exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+                Thrown when <see cref="P:Clix.QA.Selenium.TableHeaderControl.FilterStatus" /> is out of range.
+            </exception>
+        </member>
+        <member name="P:Clix.QA.Selenium.TableHeaderControl.Position">
+            <summary>
+            Gets or sets the table header position.
+            </summary>
+            <remarks>
+            The header position is 1-based.
+            </remarks>
+        </member>
+        <member name="T:Clix.QA.Selenium.TextDropDownControl">
+            <summary>
+            The text drop down control.
+            </summary>
+        </member>
+        <member name="T:Clix.QA.Selenium.ToastControl">
+            <summary>
+                The toast control.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.ToastControl.#ctor(Clix.QA.Selenium.IControl)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Clix.QA.Selenium.ToastControl"/> class.
+            </summary>
+            <param name="parent">
+            The parent.
+            </param>
+        </member>
+        <member name="P:Clix.QA.Selenium.ToastControl.ToastContainer">
+            <summary>
+                Gets the toast container.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.ToastControl.Toasts">
+            <summary>
+                Gets all the toasts.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.ToastControl.TryCloseAllToasts">
+            <summary>
+            Try to close all the toasts.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.ToastControl.FailMessageContains(System.String,System.StringComparison)">
+            <summary>
+            Indicating if the fail message contains the expected <paramref name="message"/>.
+            </summary>
+            <param name="message">
+            The expected message.
+            </param>
+            <param name="comparisonType">
+            The string comparison Type.
+            </param>
+            <returns>
+            True when the expected message is contained in any failed messages; otherwise false.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.ToastControl.FailMessageEquals(System.String,System.StringComparison)">
+            <summary>
+            Indicating if there is any fail message exactly equals the expected <paramref name="message"/>.
+            </summary>
+            <param name="message">
+            The expected message.
+            </param>
+            <param name="comparisonType">
+            The string comparison Type.
+            </param>
+            <returns>
+            True when the expected message exactly equals to any fail messages; otherwise false.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.ToastControl.InfoMessageContains(System.String,System.StringComparison)">
+            <summary>
+            Indicating if the information message contains the expected <paramref name="message"/>.
+            </summary>
+            <param name="message">
+            The expected message.
+            </param>
+            <param name="comparisonType">
+            The string comparison type.
+            </param>
+            <returns>
+            True when the expected message is contained in any information toast; otherwise false.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.ToastControl.SuccessMessageContains(System.String,System.StringComparison)">
+            <summary>
+            Indicating if the success message contains the expected <paramref name="message"/>.
+            </summary>
+            <param name="message">
+            The expected message.
+            </param>
+            <param name="comparisonType">
+            The string comparison type.
+            </param>
+            <returns>
+            True when the expected message is contained in any success messages; otherwise false.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.ToastControl.SuccessMessageEquals(System.String,System.StringComparison)">
+            <summary>
+            Indicating if there is any success message exactly equals the expected <paramref name="message"/>.
+            </summary>
+            <param name="message">
+            The expected message.
+            </param>
+            <param name="comparisonType">
+            The comparison Type.
+            </param>
+            <returns>
+            True when the expected message exactly equals to any success messages; otherwise false.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.ToastControl.WarningMessageContains(System.String,System.StringComparison)">
+            <summary>
+            Indicating if the warning message contains the expected <paramref name="message"/>.
+            </summary>
+            <param name="message">
+            The expected message.
+            </param>
+            <param name="comparisonType">
+            The string comparison type.
+            </param>
+            <returns>
+            True when the expected message is contained in any warning messages; otherwise false.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.ToastControl.GetToastMessage(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Gets the toast message.
+            </summary>
+            <param name="element">
+            The toast element.
+            </param>
+            <returns>
+            The message from the toast element.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.ToastControl.IsFailToast(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Indicating if the element is a fail toast.
+            </summary>
+            <param name="element">
+            The element.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.ToastControl.IsInfoToast(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Indicating if the element is an info type toast.
+            </summary>
+            <param name="element">
+            The element.
+            </param>
+            <returns>
+            true if the toast element is an info toast, otherwise false.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.ToastControl.IsSuccessToast(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Indicating if the element is a success toast.
+            </summary>
+            <param name="element">
+            The element.
+            </param>
+            <returns>
+            true if the toast element is a success toast, otherwise false.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.ToastControl.IsWarningToast(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Indicating if the element is a warning toast.
+            </summary>
+            <param name="element">
+            The element.
+            </param>
+            <returns>
+            true if the toast element is a warning toast, otherwise false.
+            </returns>
+        </member>
+        <member name="T:Clix.QA.Selenium.ToggleableCollection">
+            <summary>
+                The toggle control.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.ToggleableCollection.#ctor(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Clix.QA.Selenium.ToggleableCollection"/> class.
+            </summary>
+            <param name="parentElement">
+            The parent element.
+            </param>
+        </member>
+        <member name="P:Clix.QA.Selenium.ToggleableCollection.Expanded">
+            <summary>
+                Gets or sets a value indicating whether expanded.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.ToggleableCollection.ToggleElement">
+            <summary>
+                Gets the toggle element.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.ToggleableCollection.SelectByIndex(System.Int32)">
+            <summary>
+            Selects element by its zero-based index.
+            </summary>
+            <param name="index">
+            The element index.
+            </param>
+        </member>
+        <member name="M:Clix.QA.Selenium.ToggleableCollection.SelectByPosition(System.Int32)">
+            <summary>
+            Selects element by its one-based index.
+            </summary>
+            <param name="position">
+            The element position.
+            </param>
+        </member>
+        <member name="M:Clix.QA.Selenium.ToggleableCollection.SelectByText(System.String)">
+            <summary>
+            Selects element by its text.
+            </summary>
+            <param name="text">
+            The element text.
+            </param>
+        </member>
+        <member name="M:Clix.QA.Selenium.ToggleableCollection.ToggleOn(System.Boolean)">
+            <summary>
+            Toggle on/off the toggleable control.
+            </summary>
+            <param name="on">
+            The on/off switch, default is on.
+            </param>
+        </member>
+        <member name="T:Clix.QA.Selenium.WaitConditions">
+            <summary>
+                The wait for conditions helpers.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.WaitConditions.WaitClickable(OpenQA.Selenium.IWebElement,System.Nullable{System.Int32})">
+            <summary>
+            Wait until the <see cref="T:OpenQA.Selenium.IWebElement"/> is clickable.
+            </summary>
+            <param name="webElement">
+            The web element.
+            </param>
+            <param name="seconds">
+            The timeout seconds.
+            </param>
+            <returns>
+            The element.
+            </returns>
+            <exception cref="T:OpenQA.Selenium.ElementNotVisibleException">
+            The element is not clickable after timeout.
+            </exception>
+        </member>
+        <member name="M:Clix.QA.Selenium.WaitConditions.WaitDisplayed(OpenQA.Selenium.IWebElement,System.Nullable{System.Int32})">
+            <summary>
+            Wait until the <see cref="T:OpenQA.Selenium.IWebElement"/> displayed.
+            </summary>
+            <param name="webElement">
+            The web element.
+            </param>
+            <param name="seconds">
+            The timeout seconds.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/> indicating if the <see cref="T:OpenQA.Selenium.IWebElement"/> displayed.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.WaitConditions.WaitForCondition``1(``0,System.Predicate{``0},System.Int32)">
+            <summary>
+            Blocks the current thread until the specified condition is met, or until the specified time-out expires.
+            </summary>
+            <returns>
+            True if the condition is met before the time-out; otherwise, false.
+            </returns>
+            <param name="conditionContext">
+            The context to evaluate the condition.
+            </param>
+            <param name="conditionEvaluator">
+            The delegate to evaluate the condition.
+            </param>
+            <param name="millisecondsTimeout">
+            The number of milliseconds before time-out.
+            </param>
+            <typeparam name="T">
+            The <see cref="T:System.Type"/> that specifies the Type for the condition and predicate.
+            </typeparam>
+        </member>
+        <member name="M:Clix.QA.Selenium.WaitConditions.WaitForCondition(Clix.QA.Selenium.Predicate)">
+            <summary>
+            Blocks the current thread until the specified condition is met, or until the specified time-out expires.
+            </summary>
+            <returns>
+            True if the condition is met before the time-out; otherwise, false.
+            </returns>
+            <param name="conditionEvaluator">
+            The delegate to evaluate the condition.
+            </param>
+        </member>
+        <member name="M:Clix.QA.Selenium.WaitConditions.WaitForCondition(Clix.QA.Selenium.Predicate,System.Int32)">
+            <summary>
+            Blocks the current thread until the specified condition is met, or until the specified time-out expires.
+            </summary>
+            <returns>
+            True if the condition is met before the time-out; otherwise, false.
+            </returns>
+            <param name="conditionEvaluator">
+            The delegate to evaluate the condition.
+            </param>
+            <param name="millisecondsTimeout">
+            The number of milliseconds before time-out.
+            </param>
+        </member>
+        <member name="M:Clix.QA.Selenium.WaitConditions.WaitPageLoaded(OpenQA.Selenium.IWebDriver,System.Nullable{System.Int32})">
+            <summary>
+            Waits the page loaded.
+            </summary>
+            <param name="driver">
+            The driver.
+            </param>
+            <param name="seconds">
+            The seconds.
+            </param>
+            <returns>
+            The condition result.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.WaitConditions.WaitRetryClick(OpenQA.Selenium.IWebElement,System.Int32)">
+            <summary>
+            Waits the retry click.
+            </summary>
+            <param name="webElement">
+            The web element.
+            </param>
+            <param name="retry">
+            The retry.
+            </param>
+            <returns>
+            The retried click result.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.WaitConditions.WaitUntil(OpenQA.Selenium.IWebElement,OpenQA.Selenium.IWebDriver,System.Func{OpenQA.Selenium.IWebElement,System.Boolean})">
+            <summary>
+            Wait until a condition evaluated true.
+            </summary>
+            <param name="webElement">
+            The web element.
+            </param>
+            <param name="driver">
+            The webdriver used for waiting.
+            </param>
+            <param name="condition">
+            The condition evaluator.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/> indicating if expected condition achieved.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.WaitConditions.WaitUntil``1(OpenQA.Selenium.IWebDriver,System.Func{OpenQA.Selenium.IWebDriver,``0},System.Nullable{System.TimeSpan},System.Type[])">
+            <summary>
+            Waits until the condition evaluated.
+            </summary>
+            <param name="webDriver">
+            The web driver.
+            </param>
+            <param name="condition">
+            The condition.
+            </param>
+            <param name="timeout">
+            The maximum waiting timeout for the specified condition to occur.
+            </param>
+            <typeparam name="TResult">
+            The type of returned result.
+            </typeparam>
+            <param name="exceptionTypes">
+            The types of exceptions to ignore.
+            </param>
+            <returns>
+            The result evaluated from the waiting condition.
+            </returns>
+            <remarks>
+            When <paramref name="timeout"/> is not specified, wait up to the default explicit wait seconds.
+            </remarks>
+        </member>
+        <member name="M:Clix.QA.Selenium.WaitConditions.WaitUntil``1(OpenQA.Selenium.IWebElement,OpenQA.Selenium.IWebDriver,System.Func{OpenQA.Selenium.IWebElement,``0},System.Nullable{System.TimeSpan},System.Type[])">
+            <summary>
+            Waits until the condition evaluated.
+            </summary>
+            <param name="webElement">
+            The search context as of a <see cref="T:OpenQA.Selenium.IWebElement"/>.
+            </param>
+            <param name="driver">
+            The webdriver used for waiting.
+            </param>
+            <param name="condition">
+            The condition.
+            </param>
+            <param name="timeout">
+            The maximum waiting timeout for the specified condition to occur.
+            </param>
+            <typeparam name="TResult">
+            The type of returned result.
+            </typeparam>
+            <param name="exceptionTypes">
+            The types of exceptions to ignore.
+            </param>
+            <returns>
+            The result evaluated from the waiting condition.
+            </returns>
+            <remarks>
+            When <paramref name="timeout"/> is not specified, wait up to the default explicit wait seconds.
+            </remarks>
+        </member>
+        <member name="M:Clix.QA.Selenium.WaitConditions.CheckForMinimumPermissibleValue(System.Int32,System.Int32,System.String)">
+            <summary>
+            Checks for minimum permissible value.
+            </summary>
+            <param name="minimumPermissibleValue">
+            The minimum permissible value.
+            </param>
+            <param name="value">
+            The value to be validated.
+            </param>
+            <param name="parameterName">
+            The parameter name.
+            </param>
+            <returns>
+            The <see cref="T:System.Int32"/>.
+            </returns>
+        </member>
+        <member name="T:Clix.QA.Selenium.WaitManager">
+            <summary>
+            The <see cref="T:OpenQA.Selenium.IWebDriver"/> waiting manager.
+            </summary>
+            <remarks>
+            Manage either implicit wait, or explicit wait, or the combination of the two.
+            </remarks>
+        </member>
+        <member name="F:Clix.QA.Selenium.WaitManager.DriverWithTimeoutDictionary">
+            <summary>
+            The driver with timeout dictionary.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.WaitManager.GetCurrentImplicitWait(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            The get current implicit wait.
+            </summary>
+            <param name="driver">
+            The driver.
+            </param>
+            <returns>
+            The <see cref="T:System.TimeSpan"/>.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.WaitManager.RestoreImplicitTimeout(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            The restore implicit timeout.
+            </summary>
+            <param name="driver">
+            The driver.
+            </param>
+        </member>
+        <member name="M:Clix.QA.Selenium.WaitManager.SetImplicitWait(OpenQA.Selenium.IWebDriver,System.TimeSpan)">
+            <summary>
+            The set implicit wait.
+            </summary>
+            <param name="driver">
+            The driver.
+            </param>
+            <param name="timeout">
+            The timeout.
+            </param>
+            <returns>
+            The <see cref="T:OpenQA.Selenium.ITimeouts"/>.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.WaitManager.DriverHasTimeout(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            The driver has timeout.
+            </summary>
+            <param name="driver">
+            The driver.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.WaitManager.GetOrCreate(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            The get or create.
+            </summary>
+            <param name="driver">
+            The driver.
+            </param>
+            <returns>
+            The <see cref="T:Clix.QA.Selenium.WaitManager.DriverWithTimeout"/>.
+            </returns>
+        </member>
+        <member name="T:Clix.QA.Selenium.WaitManager.DriverWithTimeout">
+            <summary>
+            The driver with timeout.
+            </summary>
+        </member>
+        <member name="F:Clix.QA.Selenium.WaitManager.DriverWithTimeout.implicitTimeouts">
+            <summary>
+            The implicit timeouts.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.WaitManager.DriverWithTimeout.#ctor(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Clix.QA.Selenium.WaitManager.DriverWithTimeout"/> class.
+            </summary>
+            <param name="driver">
+            The driver.
+            </param>
+        </member>
+        <member name="P:Clix.QA.Selenium.WaitManager.DriverWithTimeout.Driver">
+            <summary>
+            Gets the driver.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.WaitManager.DriverWithTimeout.CurrentImplicitTimeout">
+            <summary>
+            The current implicit timeout.
+            </summary>
+            <returns>
+            The <see cref="T:System.TimeSpan"/>.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.WaitManager.DriverWithTimeout.RestoreImplicitTimeout">
+            <summary>
+            The restore implicit timeout.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.WaitManager.DriverWithTimeout.SetImplicitTimeout(System.TimeSpan)">
+            <summary>
+            The set implicit timeout.
+            </summary>
+            <param name="timeout">
+            The timeout.
+            </param>
+            <returns>
+            The <see cref="T:OpenQA.Selenium.ITimeouts"/>.
+            </returns>
+        </member>
+        <member name="T:Clix.QA.Selenium.WebControlExtensions">
+            <summary>
+                The web control extensions.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.WebControlExtensions.ClearAndFilloutInput(Clix.QA.Selenium.IControl,OpenQA.Selenium.By,System.String)">
+            <summary>
+            Clear and fill out input.
+            </summary>
+            <param name="control">
+            The web control, can be a page control, or an element control.
+            </param>
+            <param name="locator">
+            The web element locator.
+            </param>
+            <param name="input">
+            The input.
+            </param>
+        </member>
+        <member name="M:Clix.QA.Selenium.WebControlExtensions.Click(Clix.QA.Selenium.IControl,OpenQA.Selenium.By)">
+            <summary>
+            Clicks on the element found via the <see cref="T:OpenQA.Selenium.By"/> locator.
+            </summary>
+            <param name="control">
+            The web control that contains the element.
+            </param>
+            <param name="locator">
+            The locator.
+            </param>
+        </member>
+        <member name="M:Clix.QA.Selenium.WebControlExtensions.GetText(Clix.QA.Selenium.IControl,OpenQA.Selenium.By)">
+            <summary>
+            Gets the trimmed text from element identified by the <see cref="T:OpenQA.Selenium.By"/> locator.
+            </summary>
+            <param name="control">
+            The web control, can be a page control, or an element control.
+            </param>
+            <param name="locator">
+            The web element locator.
+            </param>
+            <returns>
+            The text of the specified element.
+            </returns>
+        </member>
+        <member name="T:Clix.QA.Selenium.WebDriverEventHandlers">
+            <summary>
+            The web driver event handlers.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.WebDriverEventHandlers.TakeScreenShot">
+            <summary>
+            The take screen shot.
+            </summary>
+            <returns>
+            The <see cref="T:System.EventHandler"/>.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.WebDriverEventHandlers.TakeScreenShot(System.Object,OpenQA.Selenium.Support.Events.WebDriverExceptionEventArgs)">
+            <summary>
+            The take screen shot.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="args">
+            The args.
+            </param>
+        </member>
+        <member name="T:Clix.QA.Selenium.WebDriverExtensions">
+            <summary>
+                The web driver extensions.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.WebDriverExtensions.GetAuthCookies(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            Gets auth cookies from current <see cref="T:OpenQA.Selenium.IWebDriver"/>.
+            </summary>
+            <param name="driver">
+            The driver.
+            </param>
+            <returns>
+            The <see cref="T:System.Net.CookieCollection"/> containing all the FedAuth cookies.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.WebDriverExtensions.GoToUrl(OpenQA.Selenium.IWebDriver,System.String,System.UriKind,System.Boolean)">
+            <summary>
+            Load a new web page in the current browser window.
+            </summary>
+            <param name="driver">
+            The driver.
+            </param>
+            <param name="url">
+            The URL to load. It is best to use a fully qualified URL.
+            </param>
+            <param name="uriKind">
+            The uri kind.
+            </param>
+            <param name="ensureNavigation">
+            The ensure Navigation.
+            </param>
+        </member>
+        <member name="M:Clix.QA.Selenium.WebDriverExtensions.GoToUrl(OpenQA.Selenium.IWebDriver,System.Uri,System.Boolean)">
+            <summary>
+            Load a new web page in the current browser window.
+            </summary>
+            <param name="driver">
+            The driver.
+            </param>
+            <param name="uri">
+            The URL to load.
+            </param>
+            <param name="ensureNavigation">
+            The ensure Navigation. When true, wait for the driver url to starts with the specified uri.
+            </param>
+        </member>
+        <member name="M:Clix.QA.Selenium.WebDriverExtensions.LaunchPortal(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            The launch portal.
+            </summary>
+            <param name="driver">
+            The driver.
+            </param>
+        </member>
+        <member name="M:Clix.QA.Selenium.WebDriverExtensions.ResolveWebDriver(Autofac.IComponentContext,System.Guid,System.String)">
+            <summary>
+            Get an instance of <see cref="T:OpenQA.Selenium.IWebDriver"/> by its token.
+            </summary>
+            <param name="componentContext">
+            The component context.
+            </param>
+            <param name="driverToken">
+            The driver token.
+            </param>
+            <param name="browserType">
+            The browser type.
+            </param>
+            <returns>
+            The <see cref="T:OpenQA.Selenium.IWebDriver"/>.
+            </returns>
+        </member>
+        <member name="T:Clix.QA.Selenium.WebDriverFactory">
+            <summary>
+                The web driver factory.
+            </summary>
+        </member>
+        <member name="F:Clix.QA.Selenium.WebDriverFactory.DefaultDriverToken">
+            <summary>
+                The default driver token.
+            </summary>
+        </member>
+        <member name="F:Clix.QA.Selenium.WebDriverFactory.drivers">
+            <summary>
+                The drivers.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.WebDriverFactory.Has(System.Guid)">
+            <summary>
+            Indicating whether the specified driver token exists.
+            </summary>
+            <param name="driverToken">
+            The web driver token identifies the driver.
+            </param>
+            <returns>
+            True if the current driver factor has the specified driver; otherwise false.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.WebDriverFactory.QuitDriver(System.Guid)">
+            <summary>
+            Quits a web driver via its driver token.
+            </summary>
+            <param name="driverToken">
+            The driver token.
+            </param>
+        </member>
+        <member name="M:Clix.QA.Selenium.WebDriverFactory.QuitAllDrivers">
+            <summary>
+            Close all the driver instances.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.WebDriverFactory.GetWebDriver">
+            <summary>
+                Get the default web driver.
+            </summary>
+            <returns>
+                The <see cref="T:OpenQA.Selenium.IWebDriver" />.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.WebDriverFactory.GetWebDriver(System.Guid)">
+            <summary>
+                Get the default event firing web driver.
+            </summary>
+            <param name="driverToken">
+                The driver Token.
+            </param>
+            <returns>
+                The <see cref="T:OpenQA.Selenium.IWebDriver" />.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.WebDriverFactory.CreateWebDriver">
+            <summary>
+                Get web driver.
+            </summary>
+            <returns>
+                The <see cref="T:OpenQA.Selenium.IWebDriver" />.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.WebDriverFactory.CreateWebDriver(System.Guid)">
+            <summary>
+                Get web driver.
+            </summary>
+            <param name="driverToken">
+                The driver Token.
+            </param>
+            <returns>
+                The <see cref="T:OpenQA.Selenium.IWebDriver" />.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.WebDriverFactory.ConfigureWebDriver(OpenQA.Selenium.IWebDriver)">
+            <summary>
+                Configure web driver.
+            </summary>
+            <param name="driver">
+                The driver.
+            </param>
+        </member>
+        <member name="T:Clix.QA.Selenium.WebDriverFactoryChrome">
+            <summary>
+            The web driver factory chrome.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.WebDriverFactoryChrome.CreateWebDriver">
+            <summary>
+            Create a chrome web driver.
+            </summary>
+            <returns>
+            The <see cref="T:OpenQA.Selenium.IWebDriver"/>.
+            </returns>
+        </member>
+        <member name="T:Clix.QA.Selenium.WebDriverFactoryConfiguration">
+            <summary>
+            The web driver factory configurations.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.WebDriverFactoryConfiguration.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Clix.QA.Selenium.WebDriverFactoryConfiguration"/> class.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.WebDriverFactoryConfiguration.SupportedVendors">
+            <summary>
+            Gets or sets all supported browser venors.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.WebDriverFactoryConfiguration.WebDriverFactories">
+            <summary>
+            Gets or sets the list of <see cref="T:Clix.QA.Selenium.WebDriverFactoryInfo"/>.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.WebDriverFactoryConfiguration.op_Addition(Clix.QA.Selenium.WebDriverFactoryConfiguration,Clix.QA.Selenium.WebDriverFactoryConfiguration)">
+            <summary>
+            Overload the operator + for <see cref="T:Clix.QA.Selenium.WebDriverFactoryConfiguration"/>.
+            </summary>
+            <param name="first">
+            The first <see cref="T:Clix.QA.Selenium.WebDriverFactoryConfiguration"/>.
+            </param>
+            <param name="second">
+            The second <see cref="T:Clix.QA.Selenium.WebDriverFactoryConfiguration"/>.
+            </param>
+            <returns>
+            The result <see cref="T:Clix.QA.Selenium.WebDriverFactoryConfiguration"/> concated the first and secoond <see cref="T:Clix.QA.Selenium.WebDriverFactoryConfiguration"/>.
+            </returns>
+        </member>
+        <member name="T:Clix.QA.Selenium.WebDriverFactoryEdge">
+            <summary>
+            The web driver factory for <see cref="T:OpenQA.Selenium.Edge.EdgeDriver"/>.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.WebDriverFactoryEdge.CreateWebDriver">
+            <summary>
+            Create an instance of <see cref="T:OpenQA.Selenium.Edge.EdgeDriver"/>.
+            </summary>
+            <returns>
+            An instance of <see cref="T:OpenQA.Selenium.Edge.EdgeDriver"/>.
+            </returns>
+        </member>
+        <member name="T:Clix.QA.Selenium.WebDriverFactoryFirefox">
+            <summary>
+            The web driver factory firefox.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.WebDriverFactoryFirefox.CreateWebDriver">
+            <summary>
+            Create a firefox web driver.
+            </summary>
+            <returns>
+            The <see cref="T:OpenQA.Selenium.IWebDriver"/>.
+            </returns>
+        </member>
+        <member name="T:Clix.QA.Selenium.WebDriverFactoryIE">
+            <summary>
+            The web driver factory ie.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.WebDriverFactoryIE.CreateWebDriver">
+            <summary>
+            Create an IE web driver.
+            </summary>
+            <returns>
+            The <see cref="T:OpenQA.Selenium.IWebDriver"/>.
+            </returns>
+        </member>
+        <member name="T:Clix.QA.Selenium.WebDriverFactoryInfo">
+            <summary>
+            Define the information for describing web driver factory.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.WebDriverFactoryInfo.AssemblyName">
+            <summary>
+            Gets or sets the assemby name where the <see cref="T:Clix.QA.Selenium.WebDriverFactory"/> defined.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.WebDriverFactoryInfo.BrowserVendor">
+            <summary>
+            Gets or sets the browser vendor associated with the <see cref="T:Clix.QA.Selenium.WebDriverFactory"/>.
+            </summary>
+        </member>
+        <member name="P:Clix.QA.Selenium.WebDriverFactoryInfo.FullWebDriverFactoryName">
+            <summary>
+            Gets or sets the full name of the <see cref="T:Clix.QA.Selenium.WebDriverFactory"/>.
+            </summary>
+        </member>
+        <member name="T:Clix.QA.Selenium.WebdriverFactoryManager">
+            <summary>
+                Manage the web driver factory instances per browser type.
+            </summary>
+        </member>
+        <member name="F:Clix.QA.Selenium.WebdriverFactoryManager.browserTypesInuse">
+            <summary>
+                Manage the in use browser types.
+            </summary>
+        </member>
+        <member name="F:Clix.QA.Selenium.WebdriverFactoryManager.factories">
+            <summary>
+                The indexed web driver factories.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.WebdriverFactoryManager.#ctor(Autofac.Features.Indexed.IIndex{System.String,Clix.QA.Selenium.WebDriverFactory})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Clix.QA.Selenium.WebdriverFactoryManager"/> class.
+            </summary>
+            <param name="factories">
+            The registered factory list.
+            </param>
+        </member>
+        <member name="M:Clix.QA.Selenium.WebdriverFactoryManager.QuitAllDrivers">
+            <summary>
+            Quits all managed web driver instances.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.WebdriverFactoryManager.ResolveWebDriverFactory(System.String)">
+            <summary>
+            Gets web driver factory per browser type.
+            </summary>
+            <param name="browserType">
+            Browser type.
+            </param>
+            <returns>
+            Web driver factory for the browser type.
+            </returns>
+        </member>
+        <member name="M:Clix.QA.Selenium.WebdriverFactoryManager.SetBrowserTypesInUse(System.String)">
+            <summary>
+            Sets browser types in use.
+            </summary>
+            <param name="browserType">
+            The browser type.
+            </param>
+        </member>
+        <member name="T:Clix.QA.Selenium.WebdriverFactoryModule">
+            <summary>
+            The default web driver factory registration module.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.WebdriverFactoryModule.Load(Autofac.ContainerBuilder)">
+            <summary>
+            Register out of the box web driver factories.
+            </summary>
+            <param name="builder">
+            The builder.
+            </param>
+        </member>
+        <member name="T:Clix.QA.Selenium.WebDriverFactoryRemoteWebDriver">
+            <summary>
+            The web driver factory chrome.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.WebDriverFactoryRemoteWebDriver.CreateWebDriver">
+            <summary>
+            Create a RemoteWebDriver driver.
+            </summary>
+            <returns>
+            The <see cref="T:OpenQA.Selenium.IWebDriver"/>.
+            </returns>
+        </member>
+        <member name="T:Clix.QA.Selenium.WebElementExtensions">
+            <summary>
+            Define extesnsion methods for <see cref="T:OpenQA.Selenium.IWebElement"/>
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.WebElementExtensions.ClearAndSendKeys(OpenQA.Selenium.IWebElement,System.String)">
+            <summary>
+            Clear existing content, and type in the new text specified by <paramref name="text"/>.
+            </summary>
+            <param name="webElement">
+            The <see cref="T:OpenQA.Selenium.IWebElement"/> represents the text field or text box.
+            </param>
+            <param name="text">The text to type into the element.</param>
+            <remarks>
+            The text to be typed may include special characters like arrow keys,
+            backspaces, function keys, and so on. Valid special keys are defined in
+            <see cref="T:OpenQA.Selenium.Keys"/>.
+            </remarks>
+        </member>
+        <member name="T:Clix.QA.Selenium.WebElementWait">
+            <summary>
+                The web element wait.
+            </summary>
+        </member>
+        <member name="M:Clix.QA.Selenium.WebElementWait.#ctor(OpenQA.Selenium.IWebElement)">
+            <summary>
+                Initializes a new instance of the <see cref="T:Clix.QA.Selenium.WebElementWait"/> class.
+            </summary>
+            <param name="webElement">The input value to pass to the evaluated conditions.</param>
+        </member>
+        <member name="M:Clix.QA.Selenium.WebElementWait.#ctor(OpenQA.Selenium.IWebElement,System.TimeSpan)">
+            <summary>
+                Initializes a new instance of the <see cref="T:Clix.QA.Selenium.WebElementWait" /> class.
+            </summary>
+            <param name="webElement">
+                The web element.
+            </param>
+            <param name="timeout">
+                The timeout.
+            </param>
+        </member>
+        <member name="M:Clix.QA.Selenium.WebElementWait.#ctor(OpenQA.Selenium.IWebElement,OpenQA.Selenium.Support.UI.IClock)">
+            <summary>
+                Initializes a new instance of the <see cref="T:Clix.QA.Selenium.WebElementWait"/> class.
+            </summary>
+            <param name="webElement">The input value to pass to the evaluated conditions.</param>
+            <param name="clock">The clock to use when measuring the timeout.</param>
+        </member>
+    </members>
+</doc>
