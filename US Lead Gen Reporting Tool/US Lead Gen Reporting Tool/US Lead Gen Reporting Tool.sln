@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "US Lead Gen Reporting Tool", "US Lead Gen Reporting Tool\US Lead Gen Reporting Tool.csproj", "{E2ED4DCA-F256-4FD9-A027-D2AF8B35C43A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E2ED4DCA-F256-4FD9-A027-D2AF8B35C43A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2ED4DCA-F256-4FD9-A027-D2AF8B35C43A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2ED4DCA-F256-4FD9-A027-D2AF8B35C43A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2ED4DCA-F256-4FD9-A027-D2AF8B35C43A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44FCAC98-478D-49CA-B4E1-4E0D5051317A}
+	EndGlobalSection
+EndGlobal
