@@ -9,10 +9,10 @@ using OpenQA.Selenium.Interactions;
 namespace US_Lead_Gen_Reporting_Tool
 {
     [TestClass]
-    public class AddAnEvent
+    public class AddAnEventStaging
     {
         [TestMethod]
-        public void Use_This_Test_To_Add_An_Event()
+        public void Use_This_Test_To_Add_An_Event_STAGING()
         {
             using (var driver = new ChromeDriver())
             {
@@ -22,7 +22,7 @@ namespace US_Lead_Gen_Reporting_Tool
                 driver.Manage().Window.Maximize();
 
                 // Navigate to url 
-                driver.Navigate().GoToUrl("https://us-dev.gmli2.bluewatertech.host");
+                driver.Navigate().GoToUrl("https://us-stage.gmli2.bluewatertech.host");
 
                 // Find SignIn btn and Click
                 driver.FindElementByXPath("//*[@id='NavigationMenu']/li").Click();
@@ -95,12 +95,12 @@ namespace US_Lead_Gen_Reporting_Tool
                 driver.FindElementByXPath("//*[@id='Code']").SendKeys("Selenium01");
 
                 //sets the date for the event being created
-                 // This will be used for the start date
-                    DateTime y = DateTime.Today.Date;
+                // This will be used for the start date
+                DateTime y = DateTime.Today.Date;
 
-                    //This will be used for the end date
-                    DateTime x = y.AddDays(5);
-                
+                //This will be used for the end date
+                DateTime x = y.AddDays(5);
+
 
                 //Source Code Start Date
                 driver.FindElementByXPath("//*[@id='StartDate']").SendKeys(y.ToString("MM/dd/yyyy"));
@@ -117,18 +117,9 @@ namespace US_Lead_Gen_Reporting_Tool
                 driver.FindElementByXPath("//*[@id='NavigationMenu']/li[2]").Click();
 
                 Thread.Sleep(5000);
-
-                //End test
-
-
-
-
-
-
-
-
-
             }
         }
     }
 }
+
+                //End test

@@ -168,6 +168,12 @@
     <Compile Include="PushingSomeButtons.cs" />
     <Compile Include="AddAnEvent.cs" />
     <Compile Include="RemovingTheAutomatedEvent.cs" />
+    <Compile Include="PullReports.cs" />
+    <Compile Include="AddAnEventStaging.cs" />
+    <Compile Include="PullReportsStaging.cs" />
+    <Compile Include="PushingSomeButtonsStaging.cs" />
+    <Compile Include="RemovingTheAutomatedEventStaging.cs" />
+    <Compile Include="PushingSomeButtonsProd.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
