@@ -123,6 +123,15 @@ namespace US_Lead_Gen_Reporting_Tool
 
                 Thread.Sleep(1000);
 
+                //Product Specialist button (07/17/2018)
+                driver.FindElementByXPath("//*[@id='NavigationMenu']/li[1]/div/ul/li[5]/a").Click();
+
+                Thread.Sleep(5000);
+
+                builder.MoveToElement(driver.FindElementByXPath("//*[@id='NavigationMenu']/li[1]/span")).Perform();
+
+                Thread.Sleep(1000);
+
                 //span the system tab
                 builder.MoveToElement(driver.FindElementByCssSelector("#NavigationMenu > li.k-item.main-menu-item.k-state-highlight.k-state-default.k-first.k-state-border-down > div > ul > li.k-item.k-state-default.k-last")).Perform();
 
